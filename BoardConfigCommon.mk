@@ -89,3 +89,7 @@ USE_OPENGL_RENDERER	:= true
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 
 BOARD_ALLOW_EGL_HIBERNATION := true
+
+# For inline kernel build - Thx to edoko
+TARGET_KERNEL_CONFIG := air_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/crespo
