@@ -27,3 +27,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/crespo/bluetooth
 
 # Use the parts that are common between all crespos
 include device/samsung/crespo/BoardConfigCommon.mk
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := crespo
