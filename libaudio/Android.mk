@@ -16,6 +16,8 @@ LOCAL_SHARED_LIBRARIES:= \
 LOCAL_WHOLE_STATIC_LIBRARIES := libaudiohw_legacy
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_CFLAGS += -fno-strict-aliasing
+
 LOCAL_SHARED_LIBRARIES += libdl
 LOCAL_C_INCLUDES += \
 	external/tinyalsa/include \
