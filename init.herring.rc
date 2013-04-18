@@ -145,11 +145,11 @@ service iprenew_bnep0 /system/bin/dhcpcd -n
     oneshot
 
 # bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/bugmailer.sh -v
-    class main
-    disabled
-    oneshot
-    keycodes 114 115 116
+#service bugreport /system/bin/bugmailer.sh -v
+#    class main
+#    disabled
+#    oneshot
+#    keycodes 114 115 116
 
 service wimax_route /system/bin/route add default dev uwbr0
     class main
