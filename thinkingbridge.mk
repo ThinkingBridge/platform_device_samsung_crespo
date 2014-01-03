@@ -1,18 +1,20 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit some common ThinkingBridge stuff.
+$(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 
 PRODUCT_RELEASE_NAME := NS
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+
+# Inherit some common ThinkingBridge stuff.
+$(call inherit-product, vendor/thinkingbridge/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
-PRODUCT_NAME := cm_crespo
 PRODUCT_DEVICE := crespo
+PRODUCT_NAME := thinkingbridge_crespo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
