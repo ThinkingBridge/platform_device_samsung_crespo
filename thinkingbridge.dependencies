@@ -1,0 +1,14 @@
+[
+    {
+        "account": "ThinkingBridge",
+        "repository": "platform_device_samsung_crespo",
+        "target_path": "device/samsung/crespo",
+        "revision": "kitkat"
+    },
+    {
+        "account": "CyanogenMod",
+        "repository": "android_kernel_samsung_crespo",
+        "target_path": "kernel/samsung/crespo",
+        "revision": "cm-11.0"
+    }
+]
